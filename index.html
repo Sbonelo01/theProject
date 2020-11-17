@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie-edge" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<title>The Project</title>
+
+	</head>
+	
+	<body>
+		<header class="showcase">
+			<div class="container">
+			<nav>
+				<h3 class="menu">=Menu</h3>
+				<ul>
+					<li><a href="#">Make an inquiry</a></li>
+				</ul>
+			</nav>
+			<div>
+				<p>< back to search</p>
+			</div>
+				<!-- this is the couros -->
+				<!-- <div>
+					<img src="img/image_name.png">
+				</div> -->
+
+		</header>
+
+		<!-- image gallery conatiner -->
+		<div class="imge-container">
+
+			<!-- the images -->
+			<div class="slides">
+				<div class="image-text">1</div>
+				<img src="img/side-view.jpeg" style="width: 100%">
+			</div>
+
+			<div class="slides">
+				<div class="image-text">2</div>
+				<img src="img/dash.jpeg" style="width: 100%">
+			</div>
+
+			<div class="slides">
+				<div class="image-text">1</div>
+				<img src="img/steering.jpeg" style="width: 100%">
+			</div>
+
+			<div class="slides">
+				<div class="image-text">3</div>
+				<img src="img/nose.jpeg" style="width: 100%">
+			</div>
+
+			<div class="slides">
+				<div class="image-text">4</div>
+				<img src="img/nose.jpeg" style="width: 100%">
+			</div>
+
+			<div class="slides">
+				<div class="image-text">5</div>
+				<img src="img/nose.jpeg" style="width: 100%">
+			</div>
+
+			<div class="slides">
+				<div class="image-text">6</div>
+				<img src="img/nose.jpeg" style="width: 100%">
+			</div>
+
+			<div class="slides">
+				<div class="image-text">7</div>
+				<img src="img/nose.jpeg" style="width: 100%">
+			</div>
+
+			<!-- the next and previous buttons -->
+
+			<a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- thumbnails at the bottom -->
+
+			<div class="row">
+				<div class="column">
+					<img class="demo cursor" src="img/side-view.jpeg" style="width: 100%" onclick="currentSlide(1)" alt="Side View of Car">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="img/steering.jpeg" style="width: 100%" onclick="currentSlide(2)" alt="Steering and Chairs">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="img/dash.jpeg" style="width: 100%" onclick="currentSlide(3)" alt="Dash View">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="img/nose.jpeg" style="width: 100%" onclick="currentSlide(4)" alt="The nose of the car">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="img/nose.jpeg" style="width: 100%" onclick="currentSlide(5)" alt="The hood">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="img/nose.jpeg" style="width: 100%" onclick="currentSlide(6)" alt="The hood">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="img/nose.jpeg" style="width: 100%" onclick="currentSlide(7)" alt="The hood">
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>
