@@ -219,6 +219,13 @@ img {
   border-radius: 20px;
 }
 
+#email {
+  background-position: 50%;
+  background-size: contain;
+  flag-icon-background: au;
+  background-repeat: no-repeat;
+}
+
 #msg-box {
   height: 100px;
 }
@@ -394,6 +401,7 @@ img {
 .column {
   float: left;
   width: 13.3%;
+  height: 15.5%;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -531,6 +539,17 @@ nav ul li img {
 
 .brand {
   font-size: x-small;
+}
+
+/* For the flag Library */
+.iti__flag {
+  background-image: url("node_modules/intl-tel-input/src/js/intlTelInput.js");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("node_modules/intl-tel-input/src/js/intlTelInput.js");
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

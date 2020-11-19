@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Sbonelo01/theProject#readme",
   "dependencies": {
+    "flag-icon-css": "^3.5.0",
     "intl-tel-input": "^17.0.8"
   }
 }
