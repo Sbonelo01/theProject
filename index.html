@@ -111,7 +111,7 @@
 							<label for='fname' class="form-spacer">Full name*</label><br>
 							<input type="text" id="fname" name="fname" class="form-spacer"><br>
 							<label for="cnumber" class="flag-con flag-icon-ae flag-icon-squred form-spacer">Contact number*</label><br>
-							<input type="tel" id="cnumber" name="cnumber" class="form-spacer"><br>
+							<input type="tel" id="cnumber" name="cnumber" style="text-indent: 17px;" class="form-spacer"><br>
 							<label for="email" class="form-spacer">Email*</label><br>
 							<input type="email" id="email" name="email" class="form-spacer form-unspacer">
 							<!-- confirm information section -->
@@ -142,23 +142,6 @@
   </div>
 </div>
 
-<script src="node_modules/intl-tel-input/src/js/intlTelInput.js"></script>
-<script>
-
-	// This script deals with placing a country flag on the input field 
-	var input = document.querySelector("#cnumber");
-	window.intlTelInput(input, { 
-		initialCountry: "auto",
-		geoIpLookUp: function(success, failer) { //looking up the IP adress and displaying the country flag
-			$.get("https://ipinfo.io", function(){
-			}, "jsonp").always(function(resp){
-				var countryCode = (resp && resp.country) ? resp.country : "ae";
-				success(countryCode)
-			})
-		},
-		utilsScript: "../../build/js/utils.js1603274336113"
-	});
-</script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

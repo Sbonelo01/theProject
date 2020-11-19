@@ -219,11 +219,17 @@ img {
   border-radius: 20px;
 }
 
+#cnumber {
+  padding-left: 30px;
+  background-color: gray;
+  background: url(../img/flags/ae-flag.png) no-repeat scroll 7px 7px;
+}
+
 #email {
-  background-position: 50%;
+  padding-left: 30px;
   background-size: contain;
-  flag-icon-background: au;
   background-repeat: no-repeat;
+  background-position: 2px 3px;
 }
 
 #msg-box {
@@ -231,7 +237,7 @@ img {
 }
 
 /* checkbox styling and positioning */
-[type=checkbox]:not(:checked),
+[type=checkbox]:not(checked),
 [type=checkbox]:checked {
   position: relative;
   left: 70px;
@@ -549,6 +555,26 @@ nav ul li img {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .iti__flag {
     background-image: url("node_modules/intl-tel-input/src/js/intlTelInput.js");
+  }
+}
+/* Media Queries*/
+@media screen and (max-width: 400px) {
+  * {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form-section {
+    width: 100%;
+    margin-top: 120%;
+    justify-content: center;
+  }
+
+  .next,
+.prev {
+    width: 25px;
+    height: 30px;
+    margin-top: -145%;
   }
 }
 
