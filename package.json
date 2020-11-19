@@ -1,0 +1,28 @@
+{
+  "name": "theproject",
+  "version": "1.0.0",
+  "description": "single we page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sbonelo01/theProject.git"
+  },
+  "keywords": [
+    "form",
+    "sass",
+    "test",
+    "single-web-page"
+  ],
+  "author": "Sbonelo Mkhize",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sbonelo01/theProject/issues"
+  },
+  "homepage": "https://github.com/Sbonelo01/theProject#readme",
+  "dependencies": {
+    "intl-tel-input": "^17.0.8"
+  }
+}
