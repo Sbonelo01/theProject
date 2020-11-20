@@ -1,144 +1,148 @@
+
+
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- my styling -->
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<!-- font awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>The Project</title>
-</head>
-<body>
-<header>
-	<div>
-		<nav>
-			<ul>
-				<li id="menu"><a href="#menu" style="float: left;">Menu</a></li>
-				<li> <img src="img/logo.svg" style="width: 20px; height: 20px;"></li>
-				<li class="inquiry-text"><a href="#inquiry">Make an inquiry</a></li>
-			</ul>
-		</nav>
-	</div>
-</header><hr>
-<div class="wrapper">
-	<div>
-   		<ul>
-   			<li class="fa fa-angle-left top-text">  Back to search</li>
-   		</ul><br>
-	     <!-- Container for the image gallery -->
-         <div class="container">
-
-         <!-- Full-width images with number text -->
-	       <div class="mySlides">
-	         <img src="img/side-view.jpeg" style="width:100%;">
-	  	  </div>
-
-		  <div class="mySlides">
-		    <img src="img/rim.jpeg" style="width:100%;">
-		  </div>
-
-		  <div class="mySlides">
-		    <img src="img/dash.jpeg" style="width:100%;">
-		  </div>
-
-		  <div class="mySlides">
-		    <img src="img/nose.jpeg" style="width:100%;">
-		  </div>
-
-		  <div class="mySlides">
-		    <img src="img/steering.jpeg" style="width:100%;">
-		  </div>
-
-		  <div class="mySlides">
-		    <img src="img/doors.jpeg" style="width:100%;">
-		  </div>
-
-		  <div class="mySlides">
-		  	<img src="img/back.jpeg" style="width: 100%";>
-		  </div>
-
-		  <!-- Next and previous buttons -->
-		  <a class="prev" onclick="plusSlides(-1)">&#10092;</a>
-		  <a class="next" onclick="plusSlides(1)">&#10093;</a>
-
-
-		  <!-- Thumbnail images -->
-		  <div class="row">
-		    <div class="column">
-		      <img class="demo cursor" src="img/side-view.jpeg" style="width:100%; padding-left: 0" onclick="currentSlide(1)" alt="car side view">
-		    </div>
-		    <div class="column">
-		      <img class="demo cursor" src="img/rim.jpeg" style="width:100%" onclick="currentSlide(2)" alt="car side view">
-		    </div>
-		    <div class="column">
-		      <img class="demo cursor" src="img/dash.jpeg" style="width:100%" onclick="currentSlide(3)" alt="car side vew">
-		    </div>
-		    <div class="column">
-		      <img class="demo cursor" src="img/nose.jpeg" style="width:100%" onclick="currentSlide(4)" alt="car sie view">
-		    </div>
-		    <div class="column">
-		      <img class="demo cursor" src="img/steering.jpeg" style="width:100%" onclick="currentSlide(5)" alt="car side view">
-		    </div>
-		    <div class="column">
-		      <img class="demo cursor" src="img/doors.jpeg" style="width:100%" onclick="currentSlide(6)" alt="car side view">
-		    </div>
-		    <div class="column">
-		      <img class="demo cursor" src="img/back.jpeg" style="width:100%" onclick="currentSlide(6)" alt="car side view">
-		    </div>
-		  </div>
-		</div>
-	</div>
-
-   <!-- <div> -->
-    <div class="form-section"><br>
-			<div id="left-side"><br>
-				<h3>GOLF</h3>
-					<p class="brand">GOLF SPORT 2.0L - Cerfified Pre Owned - 3 Years Warranty</p><br>
-				<div class="price">
-					<h3>AED 123, 000</h3><br>
-						<button class="book-test-drive">Book a test Drive</button>
-						<button class="contact-on-whatsapp fa fa-whatsapp" style="font-size: x-small;">  Contact via WhatsApp</button>
-				</div><br><br>
-
-			<div class="form">
-				<h3>Submit an enquiry</h3>
-					<form>
-						<!-- <fieldset> -->
-							<label for='fname' class="form-spacer">Full name*</label><br>
-							<input type="text" id="fname" name="fname" class="form-spacer"><br>
-							<label for="cnumber" class="flag-con flag-icon-ae flag-icon-squred form-spacer">Contact number*</label><br>
-							<input type="tel" id="cnumber" name="cnumber" style="text-indent: 17px;" class="form-spacer"><br>
-							<label for="email" class="form-spacer">Email*</label><br>
-							<input type="email" id="email" name="email" class="form-spacer form-unspacer">
-							<!-- confirm information section -->
-								<div class="select-list">
-									<table border="0" cellspacing="0" cellspacing="0" style="border-collapse: collapse; width: 80%; margin: 1.5em; font-family: Helvetica, Arial; font-size: x-small;">
-										<tbody>
-											<tr style="border-bottom: 1px solid #ccc; line-height: 2.5em; width: 74%">
-												<td style="width: 74%; padding-left: 10px;">I confirm I am over 18 years old*</td>
-												<td style="width: 30%; text-align: right"><input type="checkbox" class="input-styler"></td></tr>
-											<tr style="border-bottom: 1px solid #ccc; line-height: 2.5em; width: 74%">
-												<td style="width: 74%; padding-left: 10px;">I confirm I have a full licence*</td><br>
-												<td style="width: 30%; text-align: right"><input type="checkbox" class="input-styler"></td></tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="form-group-three">
-									<label for="msg-box"><h3>Message<h3></label><br>
-									<textarea name="message" id="msg-box"></textarea>
-								</div>
-							<!-- </div> -->
-						<!-- </fieldset> -->
-						<button class="send">Send</button>
-					</form>
-			</div>
-
-			</div>
-		</div>
-  	<!-- </div> -->
-</div>
-
-<script type="text/javascript" src="js/main.js"></script>
-</body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- my styling -->
+      <link rel="stylesheet" type="text/css" href="styles/main.css">
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>The Project</title>
+   </head>
+   <body>
+      <header>
+         <div>
+            <nav>
+               <ul>
+                  <li id="menu"><a href="#menu" style="float: left;">Menu</a></li>
+                  <li> <img src="img/logo.svg" style="width: 20px; height: 20px;"></li>
+                  <li class="inquiry-text"><a href="#inquiry">Make an inquiry</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <hr>
+      <div class="wrapper">
+         <div>
+            <ul>
+               <li class="fa fa-angle-left top-text">  Back to search</li>
+            </ul>
+            <br>
+            <!-- Container for the image gallery -->
+            <div class="container">
+               <!-- Full-width images with number text -->
+               <div class="mySlides">
+                  <img src="img/side-view.jpeg" style="width:100%;">
+               </div>
+               <div class="mySlides">
+                  <img src="img/rim.jpeg" style="width:100%;">
+               </div>
+               <div class="mySlides">
+                  <img src="img/dash.jpeg" style="width:100%;">
+               </div>
+               <div class="mySlides">
+                  <img src="img/nose.jpeg" style="width:100%;">
+               </div>
+               <div class="mySlides">
+                  <img src="img/steering.jpeg" style="width:100%;">
+               </div>
+               <div class="mySlides">
+                  <img src="img/doors.jpeg" style="width:100%;">
+               </div>
+               <div class="mySlides">
+                  <img src="img/back.jpeg" style="width: 100%";>
+               </div>
+               <!-- Next and previous buttons -->
+               <a class="prev" onclick="plusSlides(-1)">&#10092;</a>
+               <a class="next" onclick="plusSlides(1)">&#10093;</a>
+               <!-- Thumbnail images -->
+               <div class="row">
+                  <div class="column">
+                     <img class="demo cursor" src="img/side-view.jpeg" style="width:100%; padding-left: 0" onclick="currentSlide(1)" alt="car side view">
+                  </div>
+                  <div class="column">
+                     <img class="demo cursor" src="img/rim.jpeg" style="width:100%" onclick="currentSlide(2)" alt="car side view">
+                  </div>
+                  <div class="column">
+                     <img class="demo cursor" src="img/dash.jpeg" style="width:100%" onclick="currentSlide(3)" alt="car side vew">
+                  </div>
+                  <div class="column">
+                     <img class="demo cursor" src="img/nose.jpeg" style="width:100%" onclick="currentSlide(4)" alt="car sie view">
+                  </div>
+                  <div class="column">
+                     <img class="demo cursor" src="img/steering.jpeg" style="width:100%" onclick="currentSlide(5)" alt="car side view">
+                  </div>
+                  <div class="column">
+                     <img class="demo cursor" src="img/doors.jpeg" style="width:100%" onclick="currentSlide(6)" alt="car side view">
+                  </div>
+                  <div class="column">
+                     <img class="demo cursor" src="img/back.jpeg" style="width:100%" onclick="currentSlide(6)" alt="car side view">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- <div> -->
+         <div class="form-section">
+            <br>
+            <div id="left-side">
+               <br>
+               <h3>GOLF</h3>
+               <p class="brand">GOLF SPORT 2.0L - Cerfified Pre Owned - 3 Years Warranty</p>
+               <br>
+               <div class="price">
+                  <h3>AED 123, 000</h3>
+                  <br>
+                  <button class="book-test-drive">Book a test Drive</button>
+                  <button class="contact-on-whatsapp fa fa-whatsapp" style="font-size: x-small;">  Contact via WhatsApp</button>
+               </div>
+               <br><br>
+               <div class="form">
+                  <h3>Submit an enquiry</h3>
+                  <form>
+                     <!-- <fieldset> -->
+                     <label for='fname' class="form-spacer">Full name*</label><br>
+                     <input type="text" id="fname" name="fname" class="form-spacer"><br>
+                     <label for="cnumber" class="flag-con flag-icon-ae flag-icon-squred form-spacer">Contact number*</label><br>
+                     <input type="tel" id="cnumber" name="cnumber" style="text-indent: 17px;" class="form-spacer"><br>
+                     <label for="email" class="form-spacer">Email*</label><br>
+                     <input type="email" id="email" name="email" class="form-spacer form-unspacer">
+                     <!-- confirm information section -->
+                     <div class="select-list">
+                        <table border="0" cellspacing="0" cellspacing="0" style="border-collapse: collapse; width: 80%; margin: 1.5em; font-family: Helvetica, Arial; font-size: x-small;">
+                           <tbody>
+                              <tr style="border-bottom: 1px solid #ccc; line-height: 2.5em; width: 74%">
+                                 <td style="width: 74%; padding-left: 10px;">I confirm I am over 18 years old*</td>
+                                 <td style="width: 30%; text-align: right"><input type="checkbox" class="input-styler"></td>
+                              </tr>
+                              <tr style="border-bottom: 1px solid #ccc; line-height: 2.5em; width: 74%">
+                                 <td style="width: 74%; padding-left: 10px;">I confirm I have a full licence*</td>
+                                 <br>
+                                 <td style="width: 30%; text-align: right"><input type="checkbox" class="input-styler"></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class="form-group-three">
+                        <label for="msg-box">
+                           <h3>
+                           Message
+                           <h3>
+                        </label>
+                        <br>
+                        <textarea name="message" id="msg-box"></textarea>
+                     </div>
+                     <!-- </div> -->
+                     <!-- </fieldset> -->
+                     <button class="send">Send</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <!-- </div> -->
+      </div>
+      <script type="text/javascript" src="js/main.js"></script>
+   </body>
 </html>
+
