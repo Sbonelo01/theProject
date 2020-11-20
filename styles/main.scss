@@ -2,7 +2,6 @@
 
 * {
 	box-sizing: border-box;
-	margin: 0;
 	padding: 0;
 	font-family: "Helvetica", "Arial";
 }
@@ -38,7 +37,7 @@ $button-color: #000;
 	margin: 0 0 10px 0;
 
 	&:after, &:before, span, label {
-		content: ' ';
+		content: "";
 		display: block;
 		height: calc-line-height( $button-size );
 		background: $button-color;
@@ -157,8 +156,10 @@ a {
 
 .row:after {
 	content: "";
-	display: table;
+	height: 0;
 	clear: both;
+	display: table;
+	visibility: hidden
 }
 
 /* columns side by side */
@@ -358,7 +359,7 @@ img {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   width: 90%;
-  height: 90%;
+  height: auto;
   right: 30px;
   margin-left: 75px;
   position: relative;
@@ -556,6 +557,15 @@ hr {
 	border-top: 1px solid #000;
 }
 
+html {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+body {
+	min-height: 100%;
+}
+
 /* svg image related */
 
 nav ul li img {
@@ -603,6 +613,9 @@ nav ul li img {
 		width: 100%;
 		justify-content: center;
 	}
+	.container {
+		length: auto;
+	}
 	.form-section {
 		width: 100%;
 		margin-top: 120%;
@@ -614,4 +627,8 @@ nav ul li img {
 		height: 30px;
 		margin-top: -145%;
 	}
+}
+
+body {
+	border: 1px solid transparent;
 }
