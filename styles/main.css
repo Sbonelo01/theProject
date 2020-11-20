@@ -349,10 +349,6 @@ hr {
   border-top: 1px solid #000;
 }
 
-html {
-  min-height: 100%;
-}
-
 body {
   min-height: 100%;
 }
@@ -379,14 +375,24 @@ nav ul li img {
     justify-content: center;
   }
 
-  .container {
-    length: auto;
+  div.wrapper {
+    height: 100vh;
+    width: 100vw;
   }
 
-  .form-section {
-    width: 100%;
-    margin-top: 120%;
-    justify-content: center;
+  div.car-div {
+    height: 33vh;
+    width: 100vw;
+    float: right;
+    border: 1px solid red;
+  }
+
+  div.container {
+    border: 1px solid red;
+  }
+
+  .container {
+    length: auto;
   }
 
   .next,
@@ -394,6 +400,29 @@ nav ul li img {
     width: 25px;
     height: 30px;
     margin-top: -145%;
+  }
+
+  form {
+    float: left;
+    justify-content: center;
+  }
+
+  .form-section {
+    width: 100%;
+    padding-top: 275px;
+    justify-content: center;
+  }
+
+  #left-side {
+    text-align: left;
+    width: 100vw;
+    float: left;
+    padding-left: 0;
+    padding-left: 0;
+    position: absolute;
+    left: 80px;
+    font-family: small;
+    border: 1px solid green;
   }
 }
 body {
