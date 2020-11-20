@@ -21,70 +21,6 @@ $button-color: #000;
 	tranform: rotate($n);
 }
 
-
-.menu-icon {
-	position: absolute;
-	padding: 20px;
-	width: 100px;
-}
-
-.hamburger {
-	width: $button-size;
-	height: $button-size;
-	display: block;
-	position: relative;
-	background: none;
-	margin: 0 0 10px 0;
-
-	&:after, &:before, span, label {
-		content: "";
-		display: block;
-		height: calc-line-height( $button-size );
-		background: $button-color;
-		left: 0;
-		position: absolute;
-		-webkit-transition: all 300ms ease-in-out;
-		transition: all 300ms ease-in-out;
-	}
-	&:before {
-		top: 0;
-	}
-	&:after {
-		bottom: 0;
-	}
-	&:focus {
-		outline: none;
-	}
-	label {
-		width: 100%;
-		height: 100%;
-		background: none;
-		cursor: pointer;
-		z-index: 1000;
-	}
-	span {
-		top: calc-line-height( $button-size ) * 2;
-	}
-}
-
-#change-hamburger {
-	display: none;
-
-	&:checked ~ .hamburger:before, &:checked ~ .hamburger:after {
-		top: $button-size / 2;
-		margin-top: -10%;
-	}
-	&:checked ~ .hamburger:before {
-		@include css3-rotation(-45deg)
-	}
-	&:checked ~ .hamburger:after {
-		@include css3-rotation(45deg)
-	}
-	&:checked ~ .hamburger span {
-		opacity: 0;
-	}
-}
-
 a {
 	text-decoration: none;
 	color: #fff;
@@ -98,15 +34,7 @@ a {
 
 /* postioning the image container */
 
-.image-container {
-	position: relative;
-}
-
 /* hide slides by default */
-
-.mySlide {
-	display: hidden;
-}
 
 /* add pointer when hovering over the thumbnails */
 
@@ -116,7 +44,6 @@ a {
 
 /* next and previous buttons */
 
-.previous,
 .next {
 	cursor: pointer;
 	position: absoulute;
@@ -139,20 +66,11 @@ a {
 
 /* on hover, add a background color */
 
-.previous:hover,
 .next:hover {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* image number text */
-
-.image-text {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
-}
 
 .row:after {
 	content: "";
@@ -175,31 +93,12 @@ a {
 	opacity: 0.6;
 }
 
-.active,
-demo:hover {
-	opacity: 1;
-}
-
 /* grid system for left side content */
-
-.left-side-content {
-	width: 50%;
-	float: left;
-}
-
-.right-side-content {
-	width: 50%;
-	float: right;
-}
 
 /* img styling/sizing */
 
 img {
 	width: 100%;
-}
-
-.grid-container {
-	position: relative;
 }
 
 /* styling the form */
@@ -271,16 +170,14 @@ img {
 	float: left;
 }
 
-[type="checkbox"]:not(:checked) + label,
-[type="checkbox"]:checked + label {
+[type="checkbox"]:not(:checked) + label {
 	postion: relative;
 	padding-left: 1.9em;
 	cursor: pointer;
 	float: left;
 }
 
-[type="checkbox"]:not(:checked) + label:before,
-[type="checkbox"]:checked + label:before {
+[type="checkbox"]:not(:checked) + label:before {
 	content: '';
 	position: absolute;
 	left: 0; top: 0;
@@ -293,15 +190,6 @@ img {
 
 /* styling the form horizontal lines */
 
-.age,
-.licence {
-	border: none;
-	border-bottom: 1px solid #000;
-	padding: 5px 10px;
-	outline: none;
-	width: 40%;
-}
-
 /* select list */
 .select-list {
 	color: #000;
@@ -309,20 +197,8 @@ img {
 
 /* grid system */
 
-#grid {
-	display: grid;
-	height: auto;
-	grid-template-rows: 100px;
-	grid-template-colums: repeat(9, 1fr);
-}
-
 #left-side {
 	background-color: #fff;
-}
-
-#right-side {
-	background-color: #fff;
-	grid-column: 2 / 6;
 }
 
 /* grid layout */
@@ -405,21 +281,8 @@ img {
 /*}*/
 
 /* Number text (1/3 etc) */
-.numbertext {
-  top: 0;
-  font-size: 12px;
-  color: #f2f2f2;
-  padding: 8px 12px;
-  position: absolute;
-}
 
 /* Container for image text */
-.caption-container {
-  color: white;
-  padding: 2px 16px;
-  text-align: center;
-  background-color: #222;
-}
 
 .row:after {
   clear: both;
@@ -444,7 +307,6 @@ img {
   padding-left: 5px;
 }
 
-.active,
 .demo:hover {
   opacity: 1;
 }
@@ -459,47 +321,16 @@ img {
 }
 
 /* styling the header */
-.main-head {
-	grid-area: header;
-}
 
 /* Navigation bar styling */
 
 /* add background color to nav bar */
-
-.topnav {
-	overflow: hidden;
-	background-color: black;
-}
-
-.topnav a {
-	float: left;
-	color: black;
-	display: block;
-	font-size: 19px;
-	padding: 14px 16px;
-	text-decoration: none;
-
-}
 
 /* Style the inquiry text */
 
 .inquiry-text {
 	float: right;
 	
-}
-
-@media screen and (max-width: 600px) {
-	.topnav a, .topnav inquiry-text{
-		margin: 0;
-		float: none;
-		padding: 14px;
-		display: block;
-		text-align: left;
-	}
-	.topnav inquiry-text {
-		border: 1px solid #ccc;
-	}
 }
 
 header {
@@ -572,22 +403,9 @@ nav ul li img {
 	float: right;
 }
 
-.svg-container {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-	padding-bottom: 100%;
-	display: inline-block;
-	vertical-align: middle;
-}
-
 /* font resizer for the form */
 
 .form {
-	font-size: x-small;
-}
-
-.left-side {
 	font-size: x-small;
 }
 
@@ -596,15 +414,6 @@ nav ul li img {
 }
 
 /* For the flag Library */
-.iti__flag {
-	background-image: url("node_modules/intl-tel-input/src/js/intlTelInput.js")
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-	.iti__flag {
-		background-image: url("node_modules/intl-tel-input/src/js/intlTelInput.js");
-	}
-}
 
 /* Media Queries*/
 
